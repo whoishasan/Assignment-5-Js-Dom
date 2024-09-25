@@ -81,6 +81,7 @@ function handleDonationCard(
       const date = currentTime.getDate();
       const month = currentTime.getMonth() + 1;
       const year = currentTime.getFullYear();
+      // Ends
 
       //Time Section
       const time = new Date().toLocaleTimeString();
