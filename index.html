@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Donate Bangladesh</title>
+    <!-- tailwind CDN  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- font CDN  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="font-Lexend">
+    <nav
+      class="max-h-full bg-gray-700 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20"
+      id="navbar"
+    >
+      <div
+        class="md:flex md:justify-between px-8 mx-auto items-center py-4 bg-nav"
+      >
+        <div class="mb-4 md:mb-0">
+          <button class="btn bg-greenTransparent" id="blogPage">Blog</button>
+        </div>
+        <div class="flex items-center text-center justify-center mb-2 md:mb-0">
+          <img src="./assets/logo.png" alt="" class="mr-3" />
+          <h2 class="text-2xl font-semibold">Donate Bangladesh</h2>
+        </div>
+        <div class="flex items-center text-center justify-center">
+          <img src="./assets/coin.png" alt="" />
+          <h2 class="text-2xl font-semibold pl-2">
+            <span id="mainBalance">10000</span> <span>BDT</span>
+          </h2>
+        </div>
+      </div>
+
+      <!-- Donation Button Start From here  -->
+
+      <div class="flex justify-center space-x-4 py-4 mt-8">
+        <button id="donationBtn" class="btn bg-greenTransparent">
+          Donation
+        </button>
+        <button id="historyBtn" class="btn">History</button>
+      </div>
+    </nav>
+
+    <header id="donationSection">
+      <div class="container mx-auto pt-5 pb-10">
+        <!-- Frist Card Start from Here  -->
+        <div
+          class="card card-compact w-auto shadow-md p-5 border border-gray-600 m-2"
+        >
+          <div
+            class="lg:grid justify-evenly grid-cols-2 space-y-4 md:space-x-4 space-x-0"
+          >
+            <div>
+              <img
+                class="object-cover mx-auto h-96 md:w-9/12 rounded-xl"
+                src="./assets/noakhali.png"
+                alt=""
+              />
+            </div>
+            <div class="">
+              <button class="btn flex mb-4">
+                <img src="./assets/coin.png" alt="" />
+                <h2>
+                  <span id="donation-balnce-one">0</span> <span>BDT</span>
+                </h2>
+              </button>
+              <h2 id="title1" class="card-title">
+                <p>
+                  Donate for Flood at <span id="place1">Noakhali</span> ,
+                  Bangladesh
+                </p>
+              </h2>
+              <p>
+                Donate now to support flood victims in Noakhali, Bangladesh.
+                Your contribution can provide essential relief such as food,
+                shelter, and medical aid to those affected by this devastating
+                flood. Every small donation can make a big difference in
+                rebuilding their lives. Let's stand together and help Noakhali.
+              </p>
+
+              <div class="mt-4 lg:w-11/12">
+                <input
+                  id="donation-one"
+                  type="text"
+                  placeholder="Write Donation Amount"
+                  class="min-w-full my-4 outline-gray-200 outline-none border-1 bg-nav p-2 rounded-xl"
+                />
+                <button
+                  class="min-w-full btn bg-greenTransparent"
+                  id="FristDonate"
+                >
+                  Donate Now
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Second Card Start from Here Here  -->
+        <div
+          class="card card-compact w-auto shadow-md p-5 border border-gray-600 m-2"
+        >
+          <div
+            class="lg:grid justify-evenly grid-cols-2 space-y-4 md:space-x-4 space-x-0"
+          >
+            <div>
+              <img
+                class="object-contain mx-auto h-96 md:w-9/12 rounded-xl"
+                src="./assets/feni.png"
+                alt=""
+              />
+            </div>
+            <div class="">
+              <button class="btn flex mb-4">
+                <img src="./assets/coin.png" alt="" />
+                <h2>
+                  <span id="donation-balnce-two">0</span> <span>BDT</span>
+                </h2>
+              </button>
+              <h2 class="card-title" id="title2">
+                <p>
+                  Donate for Flood Relief in
+                  <span id="place2">Feni</span> ,Bangladesh
+                </p>
+              </h2>
+              <p>
+                Donate today to support flood relief efforts in Feni,
+                Bangladesh. Your contribution will provide essential aid,
+                including food, clean water, and medical assistance to affected
+                families. Together, we can help rebuild lives and restore hope.
+                Every donation makes a difference—let's stand with Feni.
+              </p>
+
+              <div class="mt-4 lg:w-11/12">
+                <input
+                  id="donation-two"
+                  type="text"
+                  placeholder="Write Donation Amount"
+                  class="min-w-full my-4 outline-gray-200 outline-none border-1 bg-nav p-2 rounded-xl"
+                />
+                <button
+                  class="min-w-full btn bg-greenTransparent"
+                  id="secoundDonate"
+                >
+                  Donate now
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Third Card Start From Here  -->
+        <div
+          class="card card-compact w-auto shadow-md p-5 border border-gray-600 m-2"
+        >
+          <div
+            class="lg:grid justify-evenly grid-cols-2 space-y-4 md:space-x-4 space-x-0"
+          >
+            <div>
+              <img
+                class="object-cover mx-auto h-96 md:w-9/12 rounded-xl"
+                src="./assets/quota-protest.png"
+                alt=""
+              />
+            </div>
+            <div class="">
+              <button class="btn flex mb-4">
+                <img src="./assets/coin.png" alt="" />
+                <h2>
+                  <span id="donation-balnce-three">0</span> <span>BDT</span>
+                </h2>
+              </button>
+              <h2 class="card-title" id="title3">
+                <p>
+                  Aid for Injured in the <span id="place3">Quota Movement</span>
+                </p>
+              </h2>
+              <p>
+                Support the injured victims of the Quota Movement in Bangladesh.
+                Your donation will help provide medical treatment,
+                rehabilitation, and essential care to those affected. Stand with
+                the injured as they recover and rebuild their lives. Every
+                contribution brings hope and healing. Together. we can make a
+                difference.
+              </p>
+
+              <div class="mt-4 lg:w-11/12">
+                <input
+                  id="donation-three"
+                  type="text"
+                  placeholder="Write Donation Amount"
+                  class="min-w-full my-4 outline-gray-200 outline-none border-1 bg-nav p-2 rounded-xl"
+                />
+                <button
+                  id="thirdDonate"
+                  class="min-w-full btn bg-greenTransparent"
+                >
+                  Donate Now
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Fourth Card Start From Here -->
+        <div
+          class="card card-compact w-auto shadow-md p-5 border border-gray-600 m-2"
+        >
+          <div
+            class="lg:grid justify-evenly grid-cols-2 space-y-4 md:space-x-4 space-x-0"
+          >
+            <div>
+              <img
+                class="object-cover mx-auto h-96 md:w-9/12 rounded-xl"
+                src="./assets/comillah.jpg"
+                alt=""
+              />
+            </div>
+            <div class="">
+              <button class="btn flex mb-4">
+                <img src="./assets/coin.png" alt="" />
+                <h2>
+                  <span id="donation-balnce-fourth">0</span> <span>BDT</span>
+                </h2>
+              </button>
+              <h2 class="card-title" id="title4">
+                <p>
+                  Support for Flood Victims in <span id="place4">Comillah</span>
+                </p>
+              </h2>
+              <p>
+                Support for Flood Victims in Comilla** Help flood victims in
+                Comilla recover from the devastating effects of recent floods.
+                Your donations will provide critical resources like food, clean
+                water, shelter, and medical aid to affected families. Join us in
+                bringing relief and hope to those in need. Every contribution
+                counts.
+              </p>
+
+              <div class="mt-4 lg:w-11/12">
+                <input
+                  id="donation-fourth"
+                  type="text"
+                  placeholder="Write Donation Amount"
+                  class="min-w-full my-4 outline-gray-200 outline-none border-1 bg-nav p-2 rounded-xl"
+                />
+                <button
+                  id="fourthDonate"
+                  class="min-w-full btn bg-greenTransparent"
+                >
+                  Donate Now
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- History section starts From here -->
+    <main id="historySection" class="mt-8 pt-5 pb-10 hidden">
+      <div id="tansitionHistory" class="container mx-auto w-10/12"></div>
+    </main>
+
+    <!-- MODAL Start From HERE  -->
+    <dialog id="my_modal_1" class="modal">
+      <div class="modal-box bg-gray-300">
+        <div class="text-center p-6">
+          <h2 class="font-bold text-3xl mb-3">Congrates!</h2>
+          <img src="./assets/coin.png" alt="" class="mx-auto mb-3" />
+          <p class="text-2xl font-semibold">
+            You Have Dontated for <span id="places"></span>
+            <span id="amount"></span>
+          </p>
+        </div>
+        <div class="modal-action justify-center">
+          <form method="dialog">
+            <button class="btn btn-primary">Ok</button>
+          </form>
+        </div>
+      </div>
+    </dialog>
+    <!-- Tailwind Coustomisation  -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              nav: "rgba(249, 247, 243, 1)",
+              greenTransparent: "rgba(180, 244, 97, 1)",
+            },
+            backgroundImage: {},
+            fontFamily: {
+              Lexend: "Lexend",
+            },
+          },
+        },
+      };
+    </script>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
